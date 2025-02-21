@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+
     <!-- Estilos -->
      <link rel="stylesheet" href="./style/style.css">
 </head>
@@ -13,7 +18,7 @@
 <body>
     
     <header>
-        <a href="#" id="brandBtn">{name}</a>
+        <a href="#" id="brandBtn" class=".dm-serif-text-regular">ND</a>
         
         <nav>
             <ul>
@@ -32,10 +37,13 @@
             
         </div>
 
-        <div class="info">
-            <h1>{name}</h1>
-            <p>Web Designer & Programmer</p>
-            <button>More</button>
+        <div id="info">
+            <div>
+                <h1 id="name">NanashiDev</h1>
+                <p id="title">Web Designer & Programmer</p>
+            </div>
+
+            <button id="moreBtn">Learn More</button>
         </div>
 
     </section>
