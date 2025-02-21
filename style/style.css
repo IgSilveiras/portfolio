@@ -1,9 +1,12 @@
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Header */
 header {
     width: 100vw;
     height: 7vh;
@@ -45,11 +48,20 @@ header {
     }
 }
 
+
+/* Landing */
 #landing {
     min-width: 100vw;
     min-height: 100vh;
+
+    display: flex;
 }
 
+#info {
+    
+}
+
+/* Efecto Parallax */
 .parallax-wrap {
     position: absolute;
     z-index: -1;
@@ -67,6 +79,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden; /* para evitar que se genere un scroll lateral */
 
     span {
         position: absolute;

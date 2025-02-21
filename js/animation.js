@@ -19,8 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Posición inicial aleatoria dentro del contenedor
         span.style.top = `${Math.random() * 100}%`;
-        span.style.left = `${Math.random() * 95}%`;
-        span.style.right = 5 %
+        span.style.left = `${Math.random() * 100}%`; 
 
         parallaxWrap.appendChild(span);
 
