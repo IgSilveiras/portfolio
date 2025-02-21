@@ -91,6 +91,7 @@ section {
     }
 
     #moreBtn {
+        position: relative;
         margin-top: 5vh;
         align-self: center;
         min-width: 35%;
@@ -98,7 +99,7 @@ section {
         padding: 1.25vw;
 
         border-radius: 0;
-        border: 3px solid white;
+        border: 2px solid white;
 
         background-color: #ffffff00;
         color: white;
@@ -106,11 +107,33 @@ section {
         font-size: 3vh;
         text-wrap: nowrap;
         
-        transition: 0.5s;
+        cursor: pointer;
+
+        transition: 0.2s ease;
+
+        &::before {
+            content : "";
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            bottom: -7px;
+            left: -7px;
+
+            border: 1px solid white;
+            opacity: 0;
+            transition: opacity(0.25s);
+        }
 
         &:hover {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            border: 2px solid rgb(0, 0, 0);
+
+            &::before {
+                opacity: 1;
+            }
         }
+
     }
 }
 
