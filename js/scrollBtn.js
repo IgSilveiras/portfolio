@@ -1,4 +1,4 @@
-// Desplazamiento con los botones de la nav y landing
+// Desplazamiento smooth con los botones de la nav y landing
 document.querySelectorAll("[data-scroll-to]").forEach(element => {
 
     element.addEventListener("click", (e) => {
@@ -18,6 +18,18 @@ document.querySelectorAll("[data-scroll-to]").forEach(element => {
     })
 
 })
+
+const brandBtn = document.getElementById("brandBtn"); // Boton "home"
+
+brandBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})
+
 
 // Agregarle clase "active" al boton correspondiente a cada sección
 const sections = document.querySelectorAll("section");
