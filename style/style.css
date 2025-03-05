@@ -186,8 +186,94 @@ section {
     }
 }
 
-#services {
-    background-color: red;
+
+/* About */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 10%, rgba(195,195,195,1) 90%, rgba(255,255,255,1) 100%); 
+
+    h2 {
+        margin: 5vh 0 3vh 0;
+        font-size: 7vh;
+    }
+
+    p {
+        width: 75%;
+    }
+
+    .services-cards {
+        width: 80%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            min-width: 20vw;
+            min-height: 25vh;
+
+            border: 2px solid black;
+            margin: 3vw;
+            background-color: #fff;
+
+            .card-logos {
+                min-width: 100%;
+
+                img {
+                    width: 4vw;
+                    min-width: 40px;
+                    
+                    margin: 1vh 0 1vh 0;
+                }
+            }
+
+            .card-info {
+                height: 50%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                h3 {
+                    font-size: 3.5vh;
+                    margin-top: 1vh;
+                }
+            }
+
+            #html-css {
+                background: rgb(229,76,33);
+                background: linear-gradient(90deg, rgba(229,76,33,1) 0%, rgba(102,48,154,1) 100%); 
+            }
+
+            #js {
+                background-color: #e9d44d;
+            }
+
+            #react {
+                background-color: #5ed3f3;
+            }
+
+            #sql {
+                background-color: #00546b;
+            }
+
+            #cpp {
+                background: rgb(101,155,211);
+                background: linear-gradient(90deg, rgba(101,155,211,1) 0%, rgba(1,66,131,1) 100%); 
+            }
+
+            #python {
+                background: rgb(16,108,164);
+                background: linear-gradient(90deg, rgba(16,108,164,1) 0%, rgba(19,148,213,1) 25%, rgba(255,217,77,1) 100%); 
+            }
+        }
+    }
 }
 
 #projects {
