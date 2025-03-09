@@ -60,18 +60,19 @@ header {
                 border-left: none;
             }
         }
-    
-        a, p {
+
+        a,
+        p {
             text-decoration: none;
             color: white;
             cursor: pointer;
             transition: 0.25s;
-    
+
             &:hover {
                 text-shadow: 0 0 10px white;
             }
         }
-        
+
         .active {
             filter: drop-shadow(0 0 5px white);
             text-shadow: 0 0 5px white;
@@ -140,13 +141,13 @@ section {
 
         font-size: 3vh;
         text-wrap: nowrap;
-        
+
         cursor: pointer;
 
         transition: 0.2s ease;
 
         &::before {
-            content : "";
+            content: "";
             position: absolute;
             top: -7px;
             right: -7px;
@@ -183,7 +184,8 @@ section {
     justify-content: center;
     align-items: center;
 
-    overflow: hidden; /* para evitar que se genere un scroll lateral */
+    overflow: hidden;
+    /* para evitar que se genere un scroll lateral */
 
     span {
         position: absolute;
@@ -216,31 +218,32 @@ section {
 
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
         .card {
-            max-width: 20vw;
-            min-height: 35vh;
+            max-width: 18vw;
+            min-height: 37vh;
+            max-height: 37vh;
 
-            border: 2px solid black;
+            border: 2px solid white;
             border-radius: 10px;
             margin: 3vw;
+            position: relative;
 
-            background-color: #ffffff;
-            color: black;
+            background-color: #ffffff25;
+            color: white;
 
-            box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 
             overflow: hidden;
 
             .card-logos {
-                border-top-left-radius: auto;
-                border-top-right-radius: auto;
                 min-width: 100%;
 
                 img {
                     height: 7vh;
                     min-height: 40px;
-                    
+
                     margin: 1vh 0 1vh 0;
                 }
             }
@@ -257,7 +260,7 @@ section {
                     font-size: 3.5vh;
                     margin-top: 1vh;
                 }
-                
+
                 p:first-of-type {
                     font-size: 13px;
                 }
@@ -267,31 +270,76 @@ section {
                 }
             }
 
-            #html-css {
-                background: rgb(229,76,33);
-                background: linear-gradient(90deg, rgba(229,76,33,1) 0%, rgba(102,48,154,1) 100%); 
+            &#html-css {
+                --bg: linear-gradient(90deg, rgba(229, 76, 33, 1) 0%, rgba(102, 48, 154, 1) 100%);
+                --bg-50: linear-gradient(90deg, rgba(229, 76, 33, 0.5) 0%, rgba(102, 48, 154, 0.5) 100%);
+                --shadow-color: #a63e5d;
             }
 
-            #js {
-                background-color: #e9d44d;
+            &#js {
+                --bg: #e9d44d;
+                --bg-50: #e9d44d60;
+                --shadow-color: var(--bg-50);
             }
 
-            #react {
-                background-color: #5ed3f3;
+            &#react{
+                --bg: #5ed3f3;
+                --bg-50: #5ed3f355;
+                --shadow-color: var(--bg-50);
             }
 
-            #sql {
-                background-color: #00546b;
+            &#sql {
+                --bg: #00546b;
+                --bg-50: #00546bad;
+                --shadow-color: var(--bg-50);
             }
 
-            #cpp {
-                background: rgb(101,155,211);
-                background: linear-gradient(90deg, rgba(101,155,211,1) 0%, rgba(1,66,131,1) 100%); 
+            &#cpp {
+                --bg: linear-gradient(90deg, rgba(101, 155, 211, 1) 0%, rgba(1, 66, 131, 1) 100%);
+                --bg-50: linear-gradient(90deg, rgba(101, 155, 211, 0.5) 0%, rgba(1, 66, 131, 0.5) 100%);
+                --shadow-color: #336eab;
             }
 
-            #python {
-                background: rgb(16,108,164);
-                background: linear-gradient(90deg, rgba(16,108,164,1) 0%, rgba(19,148,213,1) 25%, rgba(255,217,77,1) 100%); 
+            &#python{
+                --bg: linear-gradient(90deg, rgba(16, 108, 164, 1) 0%, rgba(19, 148, 213, 1) 25%, rgba(255, 217, 77, 1) 100%);
+                --bg-50: linear-gradient(90deg, rgba(16, 108, 164, 0.5) 0%, rgba(19, 148, 213, 0.5) 25%, rgba(255, 217, 77, 0.5) 100%);
+                --shadow-color: #71b09f;
+            }
+
+            .card-logos {
+                background: var(--bg);
+            }
+
+            &::before {
+                content: "";
+
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+
+                background: var(--bg);
+                opacity: 0;
+
+                transform: rotate(-45deg);
+                transition: all 0.5s ease;
+            }
+            
+            &:hover {
+                background: var(--bg-50);
+                box-shadow: 0 0 20px var(--shadow-color);
+
+                transform: scale(1.15);
+
+                a {
+                    color: rgb(44, 199, 165);
+                }
+
+                &::before {
+                    opacity: 1;
+                    transform: rotate(-45deg) translateY(100%);
+                }
             }
         }
     }
