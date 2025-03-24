@@ -88,6 +88,15 @@ section {
     &:not(#landing) {
         background: rgba(68, 47, 255, 0.1);
         color: white;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: #ccc;
+            margin: 5vh auto 0;
+        }
     }
 }
 
@@ -184,8 +193,7 @@ section {
     justify-content: center;
     align-items: center;
 
-    overflow: hidden;
-    /* para evitar que se genere un scroll lateral */
+    overflow: hidden; /* para evitar que se genere un scroll lateral */
 
     span {
         position: absolute;
@@ -197,17 +205,18 @@ section {
 
 
 /* About */
+
+h2 {
+    margin: 5vh 0 4vh 0;
+    font-size: 7vh;
+}
+
 #about {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     text-align: center;
-
-    h2 {
-        margin: 5vh 0 3vh 0;
-        font-size: 7vh;
-    }
 
     p {
         width: 75%;
@@ -342,5 +351,68 @@ section {
                 }
             }
         }
+    }
+}
+
+
+/* Projects */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .project-card{
+        width: 80%;
+        padding: 1vw;
+
+        margin-bottom: 5vh;
+
+        background-color: #ffffff25;
+
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
+        display: grid;
+        grid-template-areas: "thumbnail description";
+        grid-template-columns: 1fr 2fr;
+
+        .project-thumbnail {
+            grid-area: thumbnail;
+            width: 100%;
+        }
+
+        .project-description {
+            grid-area: description;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            h3 {
+                font-size: 4vh;
+            }
+
+            p {
+                width: 75%;
+                margin-top: 5px;
+            }
+
+            .project-links {
+                margin-top: auto;
+            }
+        }
+    }
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    p {
+        width: 75%;
     }
 }
