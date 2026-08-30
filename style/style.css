@@ -220,6 +220,8 @@ h2 {
 
     p {
         width: 75%;
+
+        margin-bottom: 2.5vh;
     }
 
     .services-cards {
@@ -406,7 +408,10 @@ h2 {
     }
 }
 
+/* Contact */
 #contact {
+    min-height: auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,4 +420,41 @@ h2 {
     p {
         width: 75%;
     }
+
+    .contact-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 5vh 1.5vw 0 1.5vw;
+
+
+            &:hover {
+                filter: drop-shadow(0 0 20px white);
+                scale: 1.1;
+                transition: scale 0.25s;
+            }
+        }
+        
+        svg {
+            height: 64px;
+        }
+    }
+}
+
+
+/* Footer */ 
+footer {
+    height: 6vh;
+    background-color: #09071f27;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2vh;
 }
