@@ -26,13 +26,17 @@
     <header>
         <a href="#" id="brandBtn" class=".dm-serif-text-regular">ND</a>
         
-        <nav>
-            <ul>
-                <li><p data-scroll-to="about">About</p></li>
-                <li><p data-scroll-to="projects">Projects</p></li>
-                <li><p data-scroll-to="contact">Contact</p></li>
-            </ul>
-        </nav>
+        <div class="headerOptions">
+            <nav>
+                <ul>
+                    <li><p data-scroll-to="about" data-translation="nav.about">About</p></li>
+                    <li><p data-scroll-to="projects" data-translation="nav.projects">Projects</p></li>
+                    <li><p data-scroll-to="contact" data-translation="nav.contact">Contact</p></li>
+                </ul>
+            </nav>
+
+            <button id="language-toggle">EN</button>
+        </div>
     </header>
 
     <section id="landing" class="section">
@@ -44,20 +48,20 @@
         <div id="info" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="easeInOutSine">
             <div>
                 <h1 id="name">NanashiDev</h1>
-                <p id="title">Web Developer & Programmer</p>
+                <p id="title" data-translation="landing.subtitle">Web Developer & Programmer</p>
             </div>
 
-            <button id="moreBtn" data-scroll-to="about">Learn More</button>
+            <button id="moreBtn" data-scroll-to="about" data-translation="landing.btn">Learn More</button>
         </div>
 
     </section>
 
     <section class="section" id="about">
-        <h2>About Me</h2>
+        <h2 data-translation="about.title">About Me</h2>
 
-        <p>I'm a web development learner based in Uruguay. I started studying Computer Engineering in 2023 and have been learning web development through courses and self-directed study since then.</p>
-        <p>I currently work with HTML, CSS, JavaScript, React, SQL, C++ and Python, while continuing to develop my skills through personal projects and practice.</p>
-        <p>I also hold a Cambridge English B2 First (FCE) certificate.</p>
+        <p data-translation="about.p1">I'm a web development learner based in Uruguay. I started studying Computer Engineering in 2023 and have been learning web development through courses and self-directed study since then.</p>
+        <p data-translation="about.p2">I currently work with HTML, CSS, JavaScript, React, SQL, C++ and Python, while continuing to develop my skills through personal projects and practice.</p>
+        <p data-translation="about.p3">I also hold a Cambridge English B2 First (FCE) certificate.</p>
 
         <div class="services-cards">
 
@@ -69,8 +73,8 @@
 
                 <div class="card-info">
                     <h3>HTML + CSS</h3>
-                    <p>Creation of website structure and styling.</p>
-                    <p>Via <a href="./assets/WDCertificate.png" target="_blank">CoderHouse</a></p>
+                    <p data-translation="about.htmlDesc">Creation of website structure and styling.</p>
+                    <p><span data-translation="about.via">Via</span> <a href="./assets/WDCertificate.png" target="_blank">CoderHouse</a></p>
                 </div>
             </div>
 
@@ -81,8 +85,8 @@
 
                 <div class="card-info">
                     <h3>JavaScript</h3>
-                    <p>Implementation of functionality and logic in web sites. Database and server connection.</p>
-                    <p>Via <a href="./assets/JSCertificate.png" target="_blank">CoderHouse</a></p>
+                    <p data-translation="about.jsDesc">Implementation of functionality and logic in web sites. Database and server connection.</p>
+                    <p><span data-translation="about.via">Via</span> <a href="./assets/JSCertificate.png" target="_blank">CoderHouse</a></p>
                 </div>
             </div>
 
@@ -93,8 +97,8 @@
 
                 <div class="card-info">
                     <h3>React JS</h3>
-                    <p>Development of dynamic and optimized user interfaces through the use of dynamic components and states.</p>
-                    <p>Via <a href="./assets/ReactCertificate.png" target="_blank">CoderHouse</a></p>
+                    <p data-translation="about.reactDesc">Development of dynamic and optimized user interfaces through the use of dynamic components and states.</p>
+                    <p><span data-translation="about.via">Via</span> <a href="./assets/ReactCertificate.png" target="_blank">CoderHouse</a></p>
                 </div>
             </div>
 
@@ -105,8 +109,8 @@
 
                 <div class="card-info">
                     <h3>SQL</h3>
-                    <p>Relational database management and querying.</p>
-                    <p>Via <a href="./assets/SQLCertificate.png" target="_blank">CoderHouse</a></p>
+                    <p data-translation="about.sqlDesc">Relational database management and querying.</p>
+                    <p><span data-translation="about.via">Via</span> <a href="./assets/SQLCertificate.png" target="_blank">CoderHouse</a></p>
                 </div>
             </div>
 
@@ -117,8 +121,8 @@
 
                 <div class="card-info">
                     <h3>C++</h3>
-                    <p>App development with object-oriented programming, focused on algorithmic solutions and resource optimization.</p>
-                    <p>Via University</p>
+                    <p data-translation="about.cppDesc">App development with object-oriented programming, focused on algorithmic solutions and resource optimization.</p>
+                    <p data-translation="about.cppVia">Via University</p>
                 </div>
             </div>
 
@@ -129,8 +133,8 @@
 
                 <div class="card-info">
                     <h3>Python</h3>
-                    <p>High flexibility, ideal for task automation and application development</p>
-                    <p>Self-learned</p>
+                    <p data-translation="about.pythonDesc">High flexibility, ideal for task automation and application development</p>
+                    <p data-translation="about.pythonVia">Self-learned</p>
                 </div>
             </div>
 
@@ -138,15 +142,15 @@
     </section>
 
     <section class="section" id="projects">
-        <h2>Projects</h2>
+        <h2 data-translation="projects.title">Projects</h2>
         
         <div class="project-card">
             <img class="project-thumbnail" src="./assets/CafeThumbnail.png" alt="Cafe website thumbnail">
 
             <div class="project-description">
                 <h3>Nana Café</h3>
-                <p>A static website developed while I was learning HTML and CSS, featuring responsive design, SEO, and enhanced styling with Bootstrap and SASS. It also includes animations with wow.js for a better visual experience.</p>
-                <p class="project-links"><a href="https://igsilveiras.github.io/nana-cafe/index.html" target="_blank">Link</a> to Website | <a href="https://github.com/IgSilveiras/nana-cafe" target="_blank">Link</a> to Repository</p>
+                <p data-translation="projects.cafe">A static website developed while I was learning HTML and CSS, featuring responsive design, SEO, and enhanced styling with Bootstrap and SASS. It also includes animations with wow.js for a better visual experience.</p>
+                <p class="project-links"><a href="https://igsilveiras.github.io/nana-cafe/index.html" target="_blank">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/nana-cafe" target="_blank">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
             </div>
         </div>
 
@@ -155,8 +159,8 @@
 
             <div class="project-description">
                 <h3>JS E-Commerce</h3>
-                <p>An E-Commerce project developed while I was learning JS. It dynamically manipulates DOM through filters and renders products after fetching them from a JSON file. It features a functional shopping cart that persists in localStorage, along with enhanced user experience using Bootstrap and Toastify.js</p>
-                <p class="project-links"><a href="https://pruebafinal-silveira.netlify.app/" target="_blank">Link</a> to Website | <a href="https://github.com/IgSilveiras/ecommerceJS" target="_blank">Link</a> to Repository</p>
+                <p data-translation="projects.jsEcomm">An E-Commerce project developed while I was learning JS. It dynamically manipulates DOM through filters and renders products after fetching them from a JSON file. It features a functional shopping cart that persists in localStorage, along with enhanced user experience using Bootstrap and Toastify.js</p>
+                <p class="project-links"><a href="https://pruebafinal-silveira.netlify.app/" target="_blank">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/ecommerceJS" target="_blank">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
             </div>
         </div>
 
@@ -165,18 +169,18 @@
 
             <div class="project-description">
                 <h3>React E-Commerce</h3>
-                <p>An e-commerce project developed while learning React, utilizing tools like useState, useEffect, useContext, useParams, and more. It features a Firebase backend for storing products and receipts. In this project, I prioritized learning functionality over styling, resulting in a very basic design. I plan to revisit it in the future to improve it.</p>
-                <p class="project-links"><a href="https://reactjs-silveira.netlify.app" target="_blank">Link</a> to Website | <a href="https://github.com/IgSilveiras/humilde-ecommerce" target="_blank">Link</a> to Repository</p>
+                <p data-translation="projects.reactEcomm">An e-commerce project developed while learning React, utilizing tools like useState, useEffect, useContext, useParams, and more. It features a Firebase backend for storing products and receipts. In this project, I prioritized learning functionality over styling, resulting in a very basic design. I plan to revisit it in the future to improve it.</p>
+                <p class="project-links"><a href="https://reactjs-silveira.netlify.app" target="_blank">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/humilde-ecommerce" target="_blank">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
             </div>
         </div>
 
-        <p>~ More coming soon ~</p>
+        <p data-translation="projects.comingSoon">~ More coming soon ~</p>
 
     </section>
 
     <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p>I'm currently looking for opportunities to gain professional experience in web development. If you'd like to get in touch, you can reach me through any of the links below.</p>
+        <h2 data-translation="contact.title">Contact</h2>
+        <p data-translation="contact.text">
 
         <div class="contact-links">
 
@@ -235,5 +239,8 @@
 
     <!-- Scroll de los Botones -->
     <script src="./js/scrollBtn.js"></script>
+
+    <!-- Traducciones -->
+    <script src="./js/translations.js"></script>
 </body>
 </html>

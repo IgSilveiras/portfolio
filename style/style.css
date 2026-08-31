@@ -44,38 +44,56 @@ header {
         text-decoration: none;
     }
 
-    nav ul {
-        width: 60%;
-
+    .headerOptions {
         display: flex;
-        list-style: none;
+        
+        nav ul {
+            width: 100%;
+            
+            display: flex;
+            list-style: none;
+        
+            margin-right: 5vw;
 
-        margin-right: 5vw;
+            li {
+                border-left: 1px solid white;
+                padding: 0.4vh 1vw 0.4vh 1vw;
 
-        li {
-            border-left: 1px solid white;
-            padding: 0.4vh 1vw 0.4vh 1vw;
+                &:first-child {
+                    border-left: none;
+                }
+            }
+            
+            a,
+            p {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                transition: 0.25s;
 
-            &:first-child {
-                border-left: none;
+                &:hover {
+                    text-shadow: 0 0 10px white;
+                }
+            }
+            
+            .active {
+                filter: drop-shadow(0 0 5px white);
+                text-shadow: 0 0 5px white;
             }
         }
 
-        a,
-        p {
-            text-decoration: none;
-            color: white;
+        #language-toggle {
             cursor: pointer;
-            transition: 0.25s;
+            font-size: 2vh;
+            color: white;
+            
+            margin: 0 2vw 0 -1vw;
+            background: none;
+            border: none;
 
-            &:hover {
+            &:hover{
                 text-shadow: 0 0 10px white;
             }
-        }
-
-        .active {
-            filter: drop-shadow(0 0 5px white);
-            text-shadow: 0 0 5px white;
         }
     }
 }
@@ -232,7 +250,7 @@ h2 {
         justify-content: center;
 
         .card {
-            max-width: 18vw;
+            width: 18vw;
             min-height: 37vh;
             max-height: 37vh;
 
