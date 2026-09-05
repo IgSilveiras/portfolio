@@ -51,6 +51,7 @@ const translations = {
         "projects.comingSoon": "~ More coming soon ~",
         "contact.title": "Contact",
         "contact.text": "I'm currently looking for opportunities to gain professional experience in web development. If you'd like to get in touch, you can reach me through any of the links below.",
+        "contact.mailToast": "Copied to Clipboard",
     },
 
     es: {
@@ -81,6 +82,7 @@ const translations = {
         "projects.comingSoon": "~ Próximamente más ~",
         "contact.title": "Contacto",
         "contact.text": "Actualmente estoy en busca de oportunidades para construir experiencia profesional en desarrollo web. Si querés ponerte en contacto, me podés encontrar en cualquiera de los links de abajo.",
+        "contact.mailToast": "Copiado al Portapapeles",
     }
 }
 
