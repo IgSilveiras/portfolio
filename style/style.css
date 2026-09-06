@@ -369,6 +369,10 @@ h2 {
                     transform: rotate(-45deg) translateY(100%);
                 }
             }
+
+            a {
+                color:#5e8df3
+            }
         }
     }
 }

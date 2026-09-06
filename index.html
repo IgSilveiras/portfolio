@@ -3,7 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>NanashiDev</title>
+
+    <meta name="description" content="Portfolio of a Uruguay-based web development learner and Computer Engineering student, open to entry-level opportunities.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NanashiDev - Web Developer">
+    <meta property="og:description" content="Portfolio of a Uruguay-based web development learner and Computer Engineering student, open to entry-level opportunities.">
+    <meta property="og:image" content="https://igsilveiras.github.io/portfolio/assets/og-image.png">
+    <meta property="og:url" content="https://igsilveiras.github.io/portfolio/">
+    <meta property="og:site_name" content="NanashiDev">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NanashiDev - Web Developer">
+    <meta name="twitter:description" content="Portfolio of a Uruguay-based web development learner and Computer Engineering student, open to entry-level opportunities.">
+    <meta name="twitter:image" content="https://igsilveiras.github.io/portfolio/assets/og-image.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://igsilveiras.github.io/portfolio/">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +32,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- TablerIcons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.46.0/tabler-icons-200.min.css" integrity="sha512-WDUCe82mxQDtNEWlcyfwL4b8u/bCgJ/rwH5X9fhNZq9IKZ6sAiwdKLt/xfs7pgKbfGZSKjf6YgRWwPx7JZqMEg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.46.0/tabler-icons-200.min.css" integrity="sha512-WDUCe82mxQDtNEWlcyfwL4b8u/bCgJ/rwH5X9fhNZq9IKZ6sAiwdKLt/xfs7pgKbfGZSKjf6YgRWwPx7JZqMEg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!-- Estilos -->
-     <link rel="stylesheet" href="./style/style.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
 </head>
 
 
@@ -29,9 +51,9 @@
         <div class="headerOptions">
             <nav>
                 <ul>
-                    <li><p data-scroll-to="about" data-translation="nav.about">About</p></li>
-                    <li><p data-scroll-to="projects" data-translation="nav.projects">Projects</p></li>
-                    <li><p data-scroll-to="contact" data-translation="nav.contact">Contact</p></li>
+                    <li><a data-scroll-to="about" data-translation="nav.about">About</a></li>
+                    <li><a data-scroll-to="projects" data-translation="nav.projects">Projects</a></li>
+                    <li><a data-scroll-to="contact" data-translation="nav.contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -39,192 +61,194 @@
         </div>
     </header>
 
-    <section id="landing" class="section">
-
-        <div class="parallax-wrap">
-            
-        </div>
-
-        <div id="info" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="easeInOutSine">
-            <div>
-                <h1 id="name">NanashiDev</h1>
-                <p id="title" data-translation="landing.subtitle">Web Developer & Programmer</p>
-            </div>
-
-            <button id="moreBtn" data-scroll-to="about" data-translation="landing.btn">Learn More</button>
-        </div>
-
-    </section>
-
-    <section class="section" id="about">
-        <h2 data-translation="about.title">About Me</h2>
-
-        <p data-translation="about.p1">I'm a web development learner based in Uruguay. I started studying Computer Engineering in 2023 and have been learning web development through courses and self-directed study since then.</p>
-        <p data-translation="about.p2">I currently work with HTML, CSS, JavaScript, React, SQL, C++ and Python, while continuing to develop my skills through personal projects and practice.</p>
-        <p data-translation="about.p3">I also hold a Cambridge English B2 First (FCE) certificate.</p>
-
-        <div class="services-cards">
-
-            <div class="card" id="html-css" data-aos="fade-down-right" data-aos-anchor="#js" data-aos-duration="1000">
-                <div class="card-logos">
-                    <img src="./assets/HTML5_logo.png" alt="HTML5 Logo">
-                    <img src="./assets/CSS_logo.png" alt="CSS Logo">
-                </div>
-
-                <div class="card-info">
-                    <h3>HTML + CSS</h3>
-                    <p data-translation="about.htmlDesc">Creation of website structure and styling.</p>
-                    <p><span data-translation="about.via">Via</span> <a href="./assets/WDCertificate.png" target="_blank">CoderHouse</a></p>
-                </div>
-            </div>
-
-            <div class="card" id="js" data-aos="fade-down" data-aos-anchor="#js" data-aos-duration="1000">
-                <div class="card-logos">
-                    <img src="./assets/JS_logo.png" alt="JavaScript Logo">
-                </div>
-
-                <div class="card-info">
-                    <h3>JavaScript</h3>
-                    <p data-translation="about.jsDesc">Implementation of functionality and logic in web sites. Database and server connection.</p>
-                    <p><span data-translation="about.via">Via</span> <a href="./assets/JSCertificate.png" target="_blank">CoderHouse</a></p>
-                </div>
-            </div>
-
-            <div class="card" id="react" data-aos="fade-down-left" data-aos-anchor="#js" data-aos-duration="1000">
-                <div class="card-logos">
-                    <img src="./assets/React_logo.png" alt="React JS Logo">
-                </div>
-
-                <div class="card-info">
-                    <h3>React JS</h3>
-                    <p data-translation="about.reactDesc">Development of dynamic and optimized user interfaces through the use of dynamic components and states.</p>
-                    <p><span data-translation="about.via">Via</span> <a href="./assets/ReactCertificate.png" target="_blank">CoderHouse</a></p>
-                </div>
-            </div>
-
-            <div class="card" id="sql" data-aos="fade-up-right" data-aos-anchor="#js" data-aos-duration="1000">
-                <div class="card-logos">
-                    <img src="./assets/SQL_logo.png" alt="SQL Logo">
-                </div>
-
-                <div class="card-info">
-                    <h3>SQL</h3>
-                    <p data-translation="about.sqlDesc">Relational database management and querying.</p>
-                    <p><span data-translation="about.via">Via</span> <a href="./assets/SQLCertificate.png" target="_blank">CoderHouse</a></p>
-                </div>
-            </div>
-
-            <div class="card" id="cpp" data-aos="fade-up" data-aos-anchor="#js" data-aos-duration="1000">
-                <div class="card-logos">
-                    <img src="./assets/C++_logo.png" alt="C++ Logo">
-                </div>
-
-                <div class="card-info">
-                    <h3>C++</h3>
-                    <p data-translation="about.cppDesc">App development with object-oriented programming, focused on algorithmic solutions and resource optimization.</p>
-                    <p data-translation="about.cppVia">Via University</p>
-                </div>
-            </div>
-
-            <div class="card" id="python" data-aos="fade-up-left" data-aos-anchor="#js" data-aos-duration="1000">
-                <div class="card-logos">
-                    <img src="./assets/Python_logo.png" alt="Python Logo">
-                </div>
-
-                <div class="card-info">
-                    <h3>Python</h3>
-                    <p data-translation="about.pythonDesc">High flexibility, ideal for task automation and application development</p>
-                    <p data-translation="about.pythonVia">Self-learned</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section" id="projects">
-        <h2 data-translation="projects.title">Projects</h2>
+    <main>
+        <section id="landing" class="section">
         
-        <div class="project-card">
-            <img class="project-thumbnail" src="./assets/CafeThumbnail.png" alt="Cafe website thumbnail">
-
-            <div class="project-description">
-                <h3>Nana Café</h3>
-                <p data-translation="projects.cafe">A static website developed while I was learning HTML and CSS, featuring responsive design, SEO, and enhanced styling with Bootstrap and SASS. It also includes animations with wow.js for a better visual experience.</p>
-                <p class="project-links"><a href="https://igsilveiras.github.io/nana-cafe/index.html" target="_blank">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/nana-cafe" target="_blank">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
+            <div class="parallax-wrap">
+                
             </div>
-        </div>
-
-        <div class="project-card">
-            <img class="project-thumbnail" src="./assets/JSProjectThumbnail.png" alt="JS e-commerce website thumbnail">
-
-            <div class="project-description">
-                <h3>JS E-Commerce</h3>
-                <p data-translation="projects.jsEcomm">An E-Commerce project developed while I was learning JS. It dynamically manipulates DOM through filters and renders products after fetching them from a JSON file. It features a functional shopping cart that persists in localStorage, along with enhanced user experience using Bootstrap and Toastify.js</p>
-                <p class="project-links"><a href="https://pruebafinal-silveira.netlify.app/" target="_blank">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/ecommerceJS" target="_blank">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
+        
+            <div id="info" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="easeInOutSine">
+                <div>
+                    <h1 id="name">NanashiDev</h1>
+                    <p id="title" data-translation="landing.subtitle">Web Developer & Programmer</p>
+                </div>
+        
+                <button id="moreBtn" data-scroll-to="about" data-translation="landing.btn">Learn More</button>
             </div>
-        </div>
-
-        <div class="project-card">
-            <img class="project-thumbnail" src="./assets/ReactProjectThumbnail.png" alt="React e-commerce website thumbnail">
-
-            <div class="project-description">
-                <h3>React E-Commerce</h3>
-                <p data-translation="projects.reactEcomm">An e-commerce project developed while learning React, utilizing tools like useState, useEffect, useContext, useParams, and more. It features a Firebase backend for storing products and receipts. In this project, I prioritized learning functionality over styling, resulting in a very basic design. I plan to revisit it in the future to improve it.</p>
-                <p class="project-links"><a href="https://reactjs-silveira.netlify.app" target="_blank">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/humilde-ecommerce" target="_blank">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
+        
+        </section>
+        
+        <section class="section" id="about">
+            <h2 data-translation="about.title">About Me</h2>
+        
+            <p data-translation="about.p1">I'm a web development learner based in Uruguay. I started studying Computer Engineering in 2023 and have been learning web development through courses and self-directed study since then.</p>
+            <p data-translation="about.p2">I currently work with HTML, CSS, JavaScript, React, SQL, C++ and Python, while continuing to develop my skills through personal projects and practice.</p>
+            <p data-translation="about.p3">I also hold a Cambridge English B2 First (FCE) certificate.</p>
+        
+            <div class="services-cards">
+        
+                <div class="card" id="html-css" data-aos="fade-down-right" data-aos-anchor="#js" data-aos-duration="1000">
+                    <div class="card-logos">
+                        <img src="./assets/HTML5_logo.png" alt="HTML5 Logo">
+                        <img src="./assets/CSS_logo.png" alt="CSS Logo">
+                    </div>
+        
+                    <div class="card-info">
+                        <h3>HTML + CSS</h3>
+                        <p data-translation="about.htmlDesc">Creation of website structure and styling.</p>
+                        <p><span data-translation="about.via">Via</span> <a href="./assets/WDCertificate.png" target="_blank" rel="noopener noreferrer">CoderHouse</a></p>
+                    </div>
+                </div>
+        
+                <div class="card" id="js" data-aos="fade-down" data-aos-anchor="#js" data-aos-duration="1000">
+                    <div class="card-logos">
+                        <img src="./assets/JS_logo.png" alt="JavaScript Logo">
+                    </div>
+        
+                    <div class="card-info">
+                        <h3>JavaScript</h3>
+                        <p data-translation="about.jsDesc">Implementation of functionality and logic in web sites. Database and server connection.</p>
+                        <p><span data-translation="about.via">Via</span> <a href="./assets/JSCertificate.png" target="_blank" rel="noopener noreferrer">CoderHouse</a></p>
+                    </div>
+                </div>
+        
+                <div class="card" id="react" data-aos="fade-down-left" data-aos-anchor="#js" data-aos-duration="1000">
+                    <div class="card-logos">
+                        <img src="./assets/React_logo.png" alt="React JS Logo">
+                    </div>
+        
+                    <div class="card-info">
+                        <h3>React JS</h3>
+                        <p data-translation="about.reactDesc">Development of dynamic and optimized user interfaces through the use of dynamic components and states.</p>
+                        <p><span data-translation="about.via">Via</span> <a href="./assets/ReactCertificate.png" target="_blank" rel="noopener noreferrer">CoderHouse</a></p>
+                    </div>
+                </div>
+        
+                <div class="card" id="sql" data-aos="fade-up-right" data-aos-anchor="#js" data-aos-duration="1000">
+                    <div class="card-logos">
+                        <img src="./assets/SQL_logo.png" alt="SQL Logo">
+                    </div>
+        
+                    <div class="card-info">
+                        <h3>SQL</h3>
+                        <p data-translation="about.sqlDesc">Relational database management and querying.</p>
+                        <p><span data-translation="about.via">Via</span> <a href="./assets/SQLCertificate.png" target="_blank" rel="noopener noreferrer">CoderHouse</a></p>
+                    </div>
+                </div>
+        
+                <div class="card" id="cpp" data-aos="fade-up" data-aos-anchor="#js" data-aos-duration="1000">
+                    <div class="card-logos">
+                        <img src="./assets/C++_logo.png" alt="C++ Logo">
+                    </div>
+        
+                    <div class="card-info">
+                        <h3>C++</h3>
+                        <p data-translation="about.cppDesc">App development with object-oriented programming, focused on algorithmic solutions and resource optimization.</p>
+                        <p data-translation="about.cppVia">Via University</p>
+                    </div>
+                </div>
+        
+                <div class="card" id="python" data-aos="fade-up-left" data-aos-anchor="#js" data-aos-duration="1000">
+                    <div class="card-logos">
+                        <img src="./assets/Python_logo.png" alt="Python Logo">
+                    </div>
+        
+                    <div class="card-info">
+                        <h3>Python</h3>
+                        <p data-translation="about.pythonDesc">High flexibility, ideal for task automation and application development</p>
+                        <p data-translation="about.pythonVia">Self-learned</p>
+                    </div>
+                </div>
+        
             </div>
-        </div>
-
-        <p data-translation="projects.comingSoon">~ More coming soon ~</p>
-
-    </section>
-
-    <section class="section" id="contact">
-        <h2 data-translation="contact.title">Contact</h2>
-        <p data-translation="contact.text">
-
-        <div class="contact-links">
-
-            <!-- GitHub -->
-            <a href="https://github.com/IgSilveiras" target="_blank">       
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                >
-                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                </svg>
-            </a>
-
-            <!-- Mail -->
-            <span id="copy-toast" data-translation="contact.mailToast">Copied to Clipboard</span>
-
-            <a href="mailto:IgSilveiras21@gmail.com" id="mailLink" target="_blank">       
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                >
-                    <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
-                    <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
-                </svg>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/ignacio-silveira-5ab415284/" target="_blank">       
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                >
-                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                    <path d="M8 11l0 5" />
-                    <path d="M8 8l0 .01" />
-                    <path d="M12 16l0 -5" />
-                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                </svg>
-            </a>
-        </div>
-    </section>
+        </section>
+        
+        <section class="section" id="projects">
+            <h2 data-translation="projects.title">Projects</h2>
+            
+            <div class="project-card">
+                <img class="project-thumbnail" src="./assets/CafeThumbnail.png" alt="Cafe website thumbnail">
+        
+                <div class="project-description">
+                    <h3>Nana Café</h3>
+                    <p data-translation="projects.cafe">A static website developed while I was learning HTML and CSS, featuring responsive design, SEO, and enhanced styling with Bootstrap and SASS. It also includes animations with wow.js for a better visual experience.</p>
+                    <p class="project-links"><a href="https://igsilveiras.github.io/nana-cafe/index.html" target="_blank" rel="noopener noreferrer">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/nana-cafe" target="_blank" rel="noopener noreferrer">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <img class="project-thumbnail" src="./assets/JSProjectThumbnail.png" alt="JS e-commerce website thumbnail">
+        
+                <div class="project-description">
+                    <h3>JS E-Commerce</h3>
+                    <p data-translation="projects.jsEcomm">An E-Commerce project developed while I was learning JS. It dynamically manipulates DOM through filters and renders products after fetching them from a JSON file. It features a functional shopping cart that persists in localStorage, along with enhanced user experience using Bootstrap and Toastify.js</p>
+                    <p class="project-links"><a href="https://pruebafinal-silveira.netlify.app/" target="_blank" rel="noopener noreferrer">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/ecommerceJS" target="_blank" rel="noopener noreferrer">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <img class="project-thumbnail" src="./assets/ReactProjectThumbnail.png" alt="React e-commerce website thumbnail">
+        
+                <div class="project-description">
+                    <h3>React E-Commerce</h3>
+                    <p data-translation="projects.reactEcomm">An e-commerce project developed while learning React, utilizing tools like useState, useEffect, useContext, useParams, and more. It features a Firebase backend for storing products and receipts. In this project, I prioritized learning functionality over styling, resulting in a very basic design. I plan to revisit it in the future to improve it.</p>
+                    <p class="project-links"><a href="https://reactjs-silveira.netlify.app" target="_blank" rel="noopener noreferrer">Link</a> <span data-translation="projects.toWeb">to Website</span> | <a href="https://github.com/IgSilveiras/humilde-ecommerce" target="_blank" rel="noopener noreferrer">Link</a> <span data-translation="projects.toRepo">to Repository</span></p>
+                </div>
+            </div>
+        
+            <p data-translation="projects.comingSoon">~ More coming soon ~</p>
+        
+        </section>
+        
+        <section class="section" id="contact">
+            <h2 data-translation="contact.title">Contact</h2>
+            <p data-translation="contact.text">I'm currently looking for opportunities to gain professional experience in web development. If you'd like to get in touch, you can reach me through any of the links below.</p>
+        
+            <div class="contact-links">
+        
+                <!-- GitHub -->
+                <a href="https://github.com/IgSilveiras" target="_blank" rel="noopener noreferrer">       
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                    >
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>
+        
+                <!-- Mail -->
+                <span id="copy-toast" data-translation="contact.mailToast">Copied to Clipboard</span>
+        
+                <a href="mailto:IgSilveiras21@gmail.com" id="mailLink" target="_blank" rel="noopener noreferrer">       
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                    >
+                        <path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" />
+                        <path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" />
+                    </svg>
+                </a>
+        
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/ignacio-silveira-5ab415284/" target="_blank" rel="noopener noreferrer">       
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="white"
+                    >
+                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                        <path d="M8 11l0 5" />
+                        <path d="M8 8l0 .01" />
+                        <path d="M12 16l0 -5" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© 2026 NanashiDev</p>
@@ -239,13 +263,13 @@
     <!-- Parallax -->
     <script src="./js/parallax.js"></script>
 
-    <!-- Scroll de los Botones -->
+    <!-- Button Scrolls -->
     <script src="./js/scrollBtn.js"></script>
 
-    <!-- Traducciones -->
+    <!-- Translations -->
     <script src="./js/translations.js"></script>
 
-    <!-- Copiar Mail -->
+    <!-- Copy Mail -->
     <script src="./js/mailBtn.js"></script>
 
 </body>
