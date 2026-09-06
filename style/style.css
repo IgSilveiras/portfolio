@@ -464,13 +464,20 @@ h2 {
             height: 64px;
         }
 
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
 
         #copy-toast {
             opacity: 0;
 
             position: absolute;
             transition: margin-top 0.5s ease, opacity 0.25s ease;
-            cursor: none;
+            cursor: default;
             margin-top: 0;
 
             &.show {
