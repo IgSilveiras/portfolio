@@ -582,6 +582,10 @@ button:focus-visible {
             display: flex;
             justify-content: center;
 
+            nav ul li{
+                padding: 0.4vh 1.25rem 0.4vh 1.25rem;
+            }
+
             #language-toggle {
                 position: absolute;
                 top: 50%;
@@ -603,10 +607,9 @@ button:focus-visible {
     }
 
     #about {
-
         .services-cards {
             width: 92%;
-            gap: 2rem;
+            gap: 1.25rem;
             
             .card {
                 width: calc(50% - 1.75rem);
@@ -655,5 +658,12 @@ button:focus-visible {
         a {
             margin: 4vh 1 rem 0 1rem;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    #about .services-cards .card {
+        width: clamp(200px, 50vw, 50vw);
+        /* height: ]; */
     }
 }
