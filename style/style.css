@@ -20,7 +20,7 @@ body {
 /* Header */
 header {
     width: 100%;
-    height: 7vh;
+    min-height: 7vh;
 
     position: sticky;
     top: 0;
@@ -29,28 +29,35 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
 
     background: rgb(3, 36, 74);
     background: linear-gradient(90deg, rgba(3, 36, 74, 1) 0%, rgba(2, 21, 42, 1) 50%, rgba(3, 36, 74, 1) 100%);
 
     box-shadow: 0 1px 5px white;
 
+    padding: 0.5rem 0;
+
     #brandBtn {
         margin-left: 1.5vw;
 
         font-family: "DM Serif Text", serif;
-        font-size: 5vh;
+        font-size: clamp(1.75rem, 2.75vw, 2.75rem);
         color: white;
         text-decoration: none;
     }
 
     .headerOptions {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         
         nav ul {
             width: 100%;
             
             display: flex;
+            flex-wrap: wrap;
             list-style: none;
         
             margin-right: 5vw;
@@ -58,6 +65,7 @@ header {
             li {
                 border-left: 1px solid white;
                 padding: 0.4vh 1vw 0.4vh 1vw;
+                font-size: clamp(0.85rem, 2vw, 1rem);
 
                 &:first-child {
                     border-left: none;
@@ -101,7 +109,7 @@ header {
 
 section {
     min-height: 100vh;
-    min-width: 98vw;
+    width: 100%;
 
     &:not(#landing) {
         background: rgba(68, 47, 255, 0.1);
@@ -139,7 +147,7 @@ section {
     #name {
         text-align: center;
         font-family: "DM Serif Text", serif;
-        font-size: 10vh;
+        font-size: clamp(2.5rem, 7vw, 6.5rem);
         font-weight: bold;
         color: white;
     }
@@ -147,8 +155,10 @@ section {
     #title {
         text-align: center;
         font-family: "Radley", serif;
-        font-size: 4vh;
+        font-size: clamp(1.1rem, 3.5vw, 2rem);
         color: white;
+
+        padding: 0 1rem;
     }
 
     #moreBtn {
@@ -157,7 +167,7 @@ section {
         align-self: center;
         min-width: 35%;
 
-        padding: 1.25vw;
+        padding: 0.9rem 1.5rem;
 
         border-radius: 0;
         border: 2px solid white;
@@ -165,7 +175,7 @@ section {
         background-color: #ffffff00;
         color: white;
 
-        font-size: 3vh;
+        font-size: clamp(1.1rem, 2.5vw, 1.6rem);
         text-wrap: nowrap;
 
         cursor: pointer;
@@ -225,7 +235,10 @@ section {
 
 h2 {
     margin: 5vh 0 4vh 0;
-    font-size: 7vh;
+    padding: 0 1rem;
+
+    font-size: clamp(2.25rem, 5vw, 4.1rem);
+    text-align: center;
 }
 
 #about {
@@ -249,7 +262,7 @@ h2 {
         justify-content: center;
 
         .card {
-            width: 18vw;
+            width: clamp(220px, 18vw, 320px);
             min-height: 37vh;
             max-height: 37vh;
 
@@ -285,7 +298,7 @@ h2 {
                 align-items: center;
 
                 h3 {
-                    font-size: 3.5vh;
+                    font-size: clamp(1.3rem, 3.2vw, 1.9rem);
                     margin-top: 1vh;
                 }
 
@@ -381,7 +394,11 @@ h2 {
     position: absolute;
     width: 1px;
     height: 1px;
+    margin: -1px;
     overflow: hidden;
+    border: 0;
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
 
 
@@ -421,13 +438,13 @@ h2 {
             text-align: center;
 
             h3 {
-                font-size: 4vh;
+                font-size: clamp(1.5rem, 3.1vw, 2.25rem);
             }
 
             p {
                 width: 75%;
                 margin-top: 5px;
-            }
+            }         
 
             .project-links {
                 margin-top: auto;
@@ -507,4 +524,115 @@ footer {
     justify-content: center;
     text-align: center;
     font-size: 2vh;
+}
+
+
+/* Accesibilidad */
+a:focus-visible,
+button:focus-visible {
+    text-shadow: 0 0 20px white;
+    
+    outline: 2px solid rgb(0, 230, 134);
+    outline-offset: 3px;
+
+    color: rgb(207, 21, 21) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.001ms !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    header .headerOptions nav ul {
+        margin-right: 2vw;
+    }
+
+    .services-cards .card {
+        width: clamp(200px, 40vw, 300px);
+    }
+
+    #projects .project-card {
+        grid-template-columns: 1fr 1.6fr;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        
+        #brandBtn {
+            margin: 0 0 0.25rem 0;
+        }
+        
+        .headerOptions {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    #info {
+        height: auto;
+        row-gap: 3vh;
+    }
+    
+    #about p,
+    #contact p {
+        width: 90%;
+    }
+
+    .services-cards {
+        width: 92%;
+
+        .card {
+            width: 100%;
+            max-width: 380px;
+            max-height: none;
+            min-height: auto;
+            
+            margin: 1rem 0;
+            
+            .card-info {
+                height: auto;
+                padding: 1rem 0.75rem 1.25rem;
+                row-gap: 0.75rem;
+            }
+        }
+    }
+
+    #projects .project-card {
+        width: 92%;
+        padding: 1rem;
+
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "thumbnail"
+            "description";
+
+        .project-description p {
+            width: 100%;
+            font-size: 14px;
+
+            &:last-child {
+                font-size: 16px;
+                margin: 1.5vh;
+            }
+        }
+    }
+
+    .contact-links {
+        svg {
+            height: 48px;
+        }
+
+        a {
+            margin: 4vh 1 rem 0 1rem;
+        }
+    }
 }
