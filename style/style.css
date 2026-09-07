@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -208,7 +208,7 @@ section {
     }
 }
 
-/* Efecto Parallax */
+/* Parallax Effect */
 .parallax-wrap {
     position: absolute;
     z-index: -1;
@@ -220,7 +220,7 @@ section {
     justify-content: center;
     align-items: center;
 
-    overflow: hidden; /* para evitar que se genere un scroll lateral */
+    overflow: hidden; /* avoid side scroll */
 
     span {
         position: absolute;
@@ -527,7 +527,7 @@ footer {
 }
 
 
-/* Accesibilidad */
+/* Accessibility */
 a:focus-visible,
 button:focus-visible {
     text-shadow: 0 0 20px white;
@@ -554,13 +554,11 @@ button:focus-visible {
         margin-right: 2vw;
     }
 
-    #about {
-        .services-cards .card {
-            width: clamp(200px, 30vw, 45vw);
-            
-            .card-info {
-                height: 75%;
-            }
+    #about .services-cards .card {
+        width: clamp(200px, 30vw, 45vw);
+        
+        .card-info {
+            height: 75%;
         }
     }
 
@@ -606,24 +604,22 @@ button:focus-visible {
         width: 90%;
     }
 
-    #about {
-        .services-cards {
-            width: 92%;
-            gap: 1.25rem;
+    #about .services-cards {
+        width: 92%;
+        gap: 1.25rem;
+        
+        .card {
+            width: calc(50% - 1.75rem);
+            max-width: none;
+            max-height: 50vh;
+            min-height: auto;
             
-            .card {
-                width: calc(50% - 1.75rem);
-                max-width: none;
-                max-height: 50vh;
-                min-height: auto;
-                
-                margin: 1rem 0;
-                
-                .card-info {
-                    height: 80%;
-                    padding: 1rem 0.75rem 1.25rem;
-                    row-gap: 0.75rem;
-                }
+            margin: 1rem 0;
+            
+            .card-info {
+                height: 80%;
+                padding: 1rem 0.75rem 1.25rem;
+                row-gap: 0.75rem;
             }
         }
     }
@@ -664,6 +660,5 @@ button:focus-visible {
 @media (max-width: 480px) {
     #about .services-cards .card {
         width: clamp(200px, 50vw, 50vw);
-        /* height: ]; */
     }
 }
