@@ -32,7 +32,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- TablerIcons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.46.0/tabler-icons-200.min.css" integrity="sha512-WDUCe82mxQDtNEWlcyfwL4b8u/bCgJ/rwH5X9fhNZq9IKZ6sAiwdKLt/xfs7pgKbfGZSKjf6YgRWwPx7JZqMEg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.46.0/tabler-icons-200.min.css" integrity="sha512-WDUCe82mxQDtNEWlcyfwL4b8u/bCgJ/rwH5X9fhNZq9IKZ6sAiwdKLt/xfs7pgKbfGZSKjf6YgRWwPx7JZqMEg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
 
     <!-- Phone Color -->
     <meta name="theme-color" content="#0a1128">
@@ -93,8 +93,8 @@
         
                 <div class="card" id="html-css" data-aos="fade-down-right" data-aos-anchor="#js" data-aos-duration="1000">
                     <div class="card-logos">
-                        <img src="./assets/HTML5_logo.png" alt="HTML5 Logo">
-                        <img src="./assets/CSS_logo.png" alt="CSS Logo">
+                        <img src="./assets/HTML5_logo.png" alt="HTML5 Logo" loading="lazy" width="512" height="512">
+                        <img src="./assets/CSS_logo.webp" alt="CSS Logo" loading="lazy" width="150" height="150">
                     </div>
         
                     <div class="card-info">
@@ -106,7 +106,7 @@
         
                 <div class="card" id="js" data-aos="fade-down" data-aos-anchor="#js" data-aos-duration="1000">
                     <div class="card-logos">
-                        <img src="./assets/JS_logo.png" alt="JavaScript Logo">
+                        <img src="./assets/JS_logo.png" alt="JavaScript Logo" loading="lazy" width="640" height="640">
                     </div>
         
                     <div class="card-info">
@@ -118,7 +118,7 @@
         
                 <div class="card" id="react" data-aos="fade-down-left" data-aos-anchor="#js" data-aos-duration="1000">
                     <div class="card-logos">
-                        <img src="./assets/React_logo.png" alt="React JS Logo">
+                        <img src="./assets/React_logo.webp" alt="React JS Logo" loading="lazy" width="128" height="114">
                     </div>
         
                     <div class="card-info">
@@ -130,7 +130,7 @@
         
                 <div class="card" id="sql" data-aos="fade-up-right" data-aos-anchor="#js" data-aos-duration="1000">
                     <div class="card-logos">
-                        <img src="./assets/SQL_logo.png" alt="SQL Logo">
+                        <img src="./assets/SQL_logo.webp" alt="SQL Logo" loading="lazy" width="128" height="126">
                     </div>
         
                     <div class="card-info">
@@ -142,7 +142,7 @@
         
                 <div class="card" id="cpp" data-aos="fade-up" data-aos-anchor="#js" data-aos-duration="1000">
                     <div class="card-logos">
-                        <img src="./assets/C++_logo.png" alt="C++ Logo">
+                        <img src="./assets/C++_logo.png" alt="C++ Logo" loading="lazy" width="228" height="256">
                     </div>
         
                     <div class="card-info">
@@ -154,7 +154,7 @@
         
                 <div class="card" id="python" data-aos="fade-up-left" data-aos-anchor="#js" data-aos-duration="1000">
                     <div class="card-logos">
-                        <img src="./assets/Python_logo.png" alt="Python Logo">
+                        <img src="./assets/Python_logo.png" alt="Python Logo" loading="lazy" width="506" height="512">
                     </div>
         
                     <div class="card-info">
@@ -171,7 +171,7 @@
             <h2 data-translation="projects.title">Projects</h2>
             
             <div class="project-card">
-                <img class="project-thumbnail" src="./assets/CafeThumbnail.png" alt="Cafe website thumbnail">
+                <img class="project-thumbnail" src="./assets/CafeThumbnail.webp" alt="Cafe website thumbnail" loading="lazy" width="1440" height="813">
         
                 <div class="project-description">
                     <h3>Nana Café</h3>
@@ -181,7 +181,7 @@
             </div>
         
             <div class="project-card">
-                <img class="project-thumbnail" src="./assets/JSProjectThumbnail.png" alt="JS e-commerce website thumbnail">
+                <img class="project-thumbnail" src="./assets/JSProjectThumbnail.webp" alt="JS e-commerce website thumbnail" loading="lazy" width="1440" height="813">
         
                 <div class="project-description">
                     <h3>JS E-Commerce</h3>
@@ -191,7 +191,7 @@
             </div>
         
             <div class="project-card">
-                <img class="project-thumbnail" src="./assets/ReactProjectThumbnail.png" alt="React e-commerce website thumbnail">
+                <img class="project-thumbnail" src="./assets/ReactProjectThumbnail.webp" alt="React e-commerce website thumbnail" loading="lazy" width="1440" height="813">
         
                 <div class="project-description">
                     <h3>React E-Commerce</h3>
@@ -262,23 +262,23 @@
 
     <!-- Animate on Scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+    <script defer>
         AOS.init( {
             once: true
         });
     </script>
 
     <!-- Parallax -->
-    <script src="./js/parallax.js"></script>
+    <script src="./js/parallax.js" defer></script>
 
     <!-- Button Scrolls -->
-    <script src="./js/scrollBtn.js"></script>
+    <script src="./js/scrollBtn.js" defer></script>
 
     <!-- Translations -->
-    <script src="./js/translations.js"></script>
+    <script src="./js/translations.js" defer></script>
 
     <!-- Copy Mail -->
-    <script src="./js/mailBtn.js"></script>
+    <script src="./js/mailBtn.js" defer></script>
 
 </body>
 </html>

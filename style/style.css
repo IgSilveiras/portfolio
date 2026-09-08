@@ -284,6 +284,7 @@ h2 {
                 img {
                     height: 7vh;
                     min-height: 40px;
+                    width: auto;
 
                     margin: 1vh 0 1vh 0;
                 }
@@ -427,6 +428,7 @@ h2 {
         .project-thumbnail {
             grid-area: thumbnail;
             width: 100%;
+            height: auto;
         }
 
         .project-description {
